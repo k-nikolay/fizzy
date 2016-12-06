@@ -36,7 +36,7 @@ img{
     font-weight: 400;
     text-align: center;
     margin-top: 152px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .main{
@@ -76,15 +76,16 @@ img{
     max-width: 240px;
     width: 240px;
     display: inline-block;
-    margin-bottom: 140px;
+    margin-bottom: 150px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .desc::after {
     background: transparent;
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.07) 50%);
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.07) 50%);
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.07) 50%);
-    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.07) 50%);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.07) 50%);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 50%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 50%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 50%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 50%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 50%);
     content: "";
     display: block;
     height: 60%;
@@ -113,6 +114,10 @@ img{
 .dropdown-menu.open{
     background: rgba( 0, 0, 0, 0);
     border: none;
+    max-height: 196px!important;
+    padding-top: 0px;
+    margin-top: 11px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .dropdown-menu.inner{
     background: rgba( 0, 0, 0, 0.17);
@@ -122,6 +127,11 @@ img{
     font-size: 24px;
     font-weight: 400;
     border-radius: 0px;
+    padding-top: 17px!important;
+    margin-left: -12px!important;
+    height: 187px!important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    line-height: 1.6;
 }
 .dropdown-menu.inner li{
     margin-bottom: 5px;
@@ -203,13 +213,7 @@ img{
 }
 .dropdown-menu {
     top: 35%;
-    left: -25%;
-}
-.dropdown-menu.inner{
-    padding-top: 12px!important;
-    margin-left: -15px!important;
-    height: 202px!important;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    left: -10%;
 }
 .bootstrap-select.btn-group .dropdown-toggle .filter-option {
     width: auto;
@@ -219,20 +223,21 @@ img{
 }
 .btn-group.bootstrap-select{
     margin-right: -50px;
-    padding-left: 10px;
+    padding-left: 21px;
+    margin-top: -1px;
 }
 input.basket{
-    background-image: url("../img/buy.png");
+    background-image: url(../img/buy.png);
     border: 3px solid #ffffff;
-    border-radius: 18px;
-    width: 60px;
-    height: 45px;
+    border-radius: 25px;
+    width: 68px;
+    height: 51px;
     background-color: rgba(0,0,0,0);
     background-repeat: no-repeat;
     background-position: center;
     outline: none!important;
-    margin-left: 18px;
-    margin-top: -5px;
+    margin-left: 35px;
+    margin-top: -10px;
     position: relative;
     z-index: 2;
 }
@@ -267,15 +272,10 @@ form.list-and-button{
     overflow-y: auto!important;
     overflow-x: hidden!important;
 }
-.box{
-    background-color: #ff943d;
-    width: 470px;
-    height: 225px;
-}
 .modal_close {
     background-color: #ff943d;
-    width: 158px;
-    max-width: 33.618%;
+    width: 470px;
+    max-width: 100%;
     height: 225px;
     position: relative;
     top: 0px;
@@ -284,7 +284,7 @@ form.list-and-button{
     display: block;
     float: left;
     font-family: BebasNeueRegular;
-    color:  #ffffff;
+    color: #ffffff;
     font-size: 60px;
     font-weight: 400;
 }
@@ -295,25 +295,25 @@ form.list-and-button{
     -o-transform: scale(1.55,-1.9);
     transform: scale(1.55,-1.9);
     font-size: 30px;
-    margin: 95px 41.5%;
+    margin: 98px 13%;
     font-family: monospace;
     font-weight: 900;
+    float: left;
 }
 .carello{
     background-color: #ff943d;
-    max-width: 66.382%;
-    width: 312px;
+    width: 313px;
     height: 225px;
     position: relative;
     display: block;
     float: right;
     color: #ffffff;
     font-family: BebasNeueRegular;
-    color:  #ffffff;
-    font-size: 60px;/* Приближение из-за подстановки шрифтов */
+    color: #ffffff;
+    font-size: 60px;
     font-weight: 400;
     padding-top: 70px;
-    cursor:default;
+    cursor: default;
 }
 .modal_form::-webkit-scrollbar {
     width: 0px;
@@ -333,12 +333,12 @@ form.list-and-button{
     display:none;
 }
 .product{
-    margin-left: 65px;
-    margin-top: 30px;
+    margin-left: 60px;
+    margin-top: 34px;
 }
 .product-total{
-    margin-left: 65px;
-    margin-top: 30px;
+    margin-left: 60px;
+    margin-top: 45px;
 }
 .product::after{
     content: "";
@@ -347,12 +347,13 @@ form.list-and-button{
     height: 1px;
     width: 350px;
     background-color: #d9d9d9;
-    margin-left: -10px;
-    margin-top: 150px;
+    margin-left: -3px;
+    margin-top: 155px;
 }
 .product img{
     float: left;
-    width: 70px;
+    width: 67px;
+    margin-top: 5px;
 }
 .product h1{
     font-family: Gilroy;
@@ -361,6 +362,7 @@ form.list-and-button{
     font-weight: 300;
     text-transform: uppercase;
     padding-bottom: 5px;
+    line-height: 1.2;
 }
 .product h2{
     font-family: Gilroy;
@@ -376,13 +378,15 @@ form.list-and-button{
 }
 .product-text{
     float: left;
-    padding-left: 35px;
+    padding-left: 30px;
 }
 .total h1{
     font-family: Gilroy;
     color:  #2f2e2e;
     font-size: 30px;
     font-weight: 300;
+    line-height: 1;
+    margin-bottom: 0px;
 }
 .total h2{
     font-family: Gilroy;
@@ -398,7 +402,7 @@ form.list-and-button{
     width: 470px;
     background-color: #d9d9d9;
     margin-left: -65px;
-    margin-top: 35px;
+    margin-top: 27px;
 }
 .total-buy{
     margin-bottom: 35px;
@@ -413,6 +417,9 @@ input.total-buy{
     font-family: GilroyBold;
     font-size: 18px;
     font-weight: 700;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: -18px;
 }
 input.total-buy:hover{
     background-color: #323232;
@@ -434,7 +441,7 @@ input.total-buy:hover{
     z-index: 1;
     max-width: 100%;
     height: 21px;
-    width: 1135px;
+    width: 1105px;
     margin: 0 auto;
 }
 .doska2, .doska3, .doska4{

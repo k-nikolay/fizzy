@@ -27,7 +27,7 @@
                     <p>OFFERTA LIMITATA -50%</p>
                     <h2>$8.50<sup>19.00$</sup></h2>
                     <form class="list-and-button">
-                        <select class="selectpicker" data-size="6" data-dropup-auto="false" style="display: none!important;">
+                        <select class="selectpicker" data-size="7" data-dropup-auto="false" style="display: none!important;">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3" selected>3</option>
@@ -79,7 +79,7 @@
                         <option value="49">49</option>
                         <option value="50">50</option>
                     </select>
-                        <input type="button" class="basket transition">
+                        <input type="button" class="basket transition" value="">
                     </form>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                     <p>OFFERTA LIMITATA -50%</p>
                     <h2>$8.50<sup>19.00$</sup></h2>
                     <form class="list-and-button">
-                        <select class="selectpicker" data-toggle="collapse" data-size="6" data-dropup-auto="false" data-width="122px" style="display: none!important;">
+                        <select class="selectpicker" data-size="7" data-dropup-auto="false" style="display: none!important;">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3" selected>3</option>
@@ -143,7 +143,7 @@
                             <option value="49">49</option>
                             <option value="50">50</option>
                         </select>
-                        <input type="button" class="basket transition">
+                        <input type="button" class="basket transition" value="">
                     </form>
                 </div>
             </div>
@@ -155,7 +155,7 @@
                     <p>OFFERTA LIMITATA -50%</p>
                     <h2>$8.50<sup>19.00$</sup></h2>
                     <form class="list-and-button">
-                        <select class="selectpicker" data-size="6" data-dropup-auto="false" data-width="122px" style="display: none!important;">
+                        <select class="selectpicker" data-size="7" data-dropup-auto="false" style="display: none!important;">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3" selected>3</option>
@@ -207,7 +207,7 @@
                             <option value="49">49</option>
                             <option value="50">50</option>
                         </select>
-                        <input type="button" class="basket transition">
+                        <input type="button" class="basket transition" value="">
                     </form>
                 </div>
             </div>
@@ -219,7 +219,7 @@
                     <p>OFFERTA LIMITATA -50%</p>
                     <h2>$8.50<sup>19.00$</sup></h2>
                     <form class="list-and-button">
-                        <select class="selectpicker" data-size="6" data-dropup-auto="false" data-width="122px" style="display: none!important;">
+                        <select class="selectpicker" data-size="7" data-dropup-auto="false" style="display: none!important;">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3" selected>3</option>
@@ -271,17 +271,17 @@
                             <option value="49">49</option>
                             <option value="50">50</option>
                         </select>
-                        <input type="button" class="basket transition">
+                        <input type="button" class="basket transition" value="">
                     </form>
                 </div>
             </div>
         </div>
     </div>
     <div class="modal_form">
-        <div class="box">
-            <div class="modal_close"><p> > </p></div>
-            <p class="carello">CARELLO</p>
-        </div>
+            <div class="modal_close">
+                <p> > </p>
+                <div class="carello">CARELLO</div>
+            </div>
         <div class="side-menu">
             <div class="row">
                 <div class="col-xs-12 product">
@@ -328,7 +328,7 @@
             <div class="row">
                 <div class="col-xs-12 product-total">
                     <div class="total">
-                        <h1>Subtotale</h1>
+                        <h1>SUBTOTALE</h1>
                         <h2>€455.00</h2>
                     </div>
                 </div>
@@ -353,21 +353,21 @@
             $('.basket').click( function(event){
                 event.preventDefault();
                 $(document.body).css('overflow','hidden');
-                $('.overlay').fadeIn(300,
+                $('.overlay').fadeIn(150,
                     function(){
                         $('.modal_form')
                             .css('display', 'block')
-                            .animate({right: '0%'}, 500);
+                            .animate({right: '0%'}, 250);
                     });
             });
 
             $('.modal_close, .overlay').click( function(){
                 $('.modal_form')
-                    .animate({right: '-50%'}, 500,
+                    .animate({right: '-50%'}, 250,
                         function(){
                             $(this).css('display', 'none');
                             $(document.body).css('overflow','auto');
-                            $('.overlay').fadeOut(300);
+                            $('.overlay').fadeOut(150);
                         }
                     );
             });
