@@ -420,6 +420,7 @@ input.total-buy{
     margin-left: 20px;
     margin-bottom: 20px;
     margin-top: -18px;
+    cursor: pointer;
 }
 input.total-buy:hover{
     background-color: #323232;
