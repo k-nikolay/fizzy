@@ -420,6 +420,7 @@ input.total-buy{
     margin-left: 20px;
     margin-bottom: 20px;
     margin-top: -18px;
+    cursor: pointer;
 }
 input.total-buy:hover{
     background-color: #323232;
@@ -474,12 +475,12 @@ input.total-buy:hover{
     .doska3{
         display: block;
         width: 270px;
-        top: 1830px;
+        top: 1850px;
     }
     .doska4{
         display: block;
         width: 270px;
-        top: 2560px;
+        top: 2590px;
     }
 }
 
